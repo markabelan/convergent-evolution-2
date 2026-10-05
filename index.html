@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Tree of Life Keeps Inventing the Same Tricks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css?v=wheel16" />
+  </head>
+  <body>
+    <div id="app">
+      <aside class="editorial">
+        <p class="kicker">Biology</p>
+        <h1>The tree of life keeps inventing the same tricks</h1>
+        <p class="dek">
+          Convergent evolution is what happens when distant branches arrive at
+          the same solution — wings, eyes, bodies of many cells — without
+          sharing the trait in a common ancestor.
+        </p>
+        <div class="byline">
+          <p class="byline-name">
+            By
+            <a class="byline-author" href="https://www.quantamagazine.org/authors/markbelan/">
+              <img class="byline-photo" src="img/mark-belan.png" alt="" width="36" height="36" />
+              <span>Mark Belan</span>
+            </a>
+            and
+            <a class="byline-author" href="https://www.quantamagazine.org/authors/hannah-waters/">
+              <img class="byline-photo" src="img/hannah-waters.png" alt="" width="36" height="36" />
+              <span>Hannah Waters</span>
+            </a>
+            <time datetime="2026-09-16">September 16, 2026</time>
+          </p>
+        </div>
+        <hr class="rule" />
+        <p class="lede">
+          Life is one tree, not a ladder. Most traits travel with ancestry. A
+          few problems are so useful that separate lineages solve them on their
+          own. That echo — the same idea, written onto far-apart twigs — is
+          convergent evolution.
+        </p>
+        <p class="lede">
+          This page opens on five cases. Choose one: the wheel turns to that
+          part of the tree, the last shared organism sits at the fork, and
+          the two lineages show how they solved the same problem on their own.
+        </p>
+
+        <section id="traits" class="trait-box" aria-label="Convergent traits">
+          <div class="trait-box-head">
+            <h2 class="trait-box-title">Choose a trait</h2>
+          </div>
+          <div class="trait-list is-short">
+            <button class="trait" type="button" data-trait="echolocation" aria-pressed="false">
+              Echolocation
+            </button>
+            <button class="trait" type="button" data-trait="spines" aria-pressed="false">
+              Spines
+            </button>
+            <button class="trait" type="button" data-trait="c4" aria-pressed="false">
+              C4 photosynthesis
+            </button>
+            <button class="trait" type="button" data-trait="carcinization" aria-pressed="false">
+              Carcinization
+            </button>
+            <button class="trait" type="button" data-trait="carbon" aria-pressed="false">
+              Carbon from air
+            </button>
+          </div>
+        </section>
+      </aside>
+
+      <section id="stage" aria-label="Convergent trait on the tree of life">
+        <a
+          class="quanta-logo"
+          href="https://www.quantamagazine.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="img/quanta-logo.svg" alt="Quanta Magazine" />
+        </a>
+        <div id="tree-root"></div>
+        <article id="case-figure" class="case-figure">
+          <p class="case-kicker">Echolocation</p>
+          <p class="case-ancestor">
+            <span class="case-ancestor-kicker">
+              Last shared organism
+              <span class="case-lacked">no echolocation</span>
+            </span>
+            <span class="case-ancestor-body"></span>
+          </p>
+          <div class="case-pair">
+            <section class="case-card" data-slot="0">
+              <header class="case-head">
+                <h3 class="case-name"></h3>
+                <p class="case-need"></p>
+              </header>
+              <div class="case-demo"></div>
+              <p class="case-blurb"></p>
+            </section>
+            <section class="case-card" data-slot="1">
+              <header class="case-head">
+                <h3 class="case-name"></h3>
+                <p class="case-need"></p>
+              </header>
+              <div class="case-demo"></div>
+              <p class="case-blurb"></p>
+            </section>
+          </div>
+          <p class="case-solution">
+            <span class="case-solution-kicker">Shared solution</span>
+            <span class="case-solution-body"></span>
+          </p>
+        </article>
+      </section>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "d3": "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm"
+        }
+      }
+    </script>
+    <script type="module" src="js/main.js?v=wheel16"></script>
+  </body>
+</html>
